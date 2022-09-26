@@ -1,15 +1,18 @@
-// function MainContent() {
-// 	return <h1>I'm Learning React</h1>;
-// }
-
-// ReactDOM.render(
+// const page = (
 // 	<div>
-// 		<MainContent />
-// 	</div>,
-// 	document.getElementById("root")
+// 		<h1 className="header">This is JSX</h1>
+// 		<p>This is a paragraph</p>
+// 	</div>
 // );
+const navbar = (
+	<nav>
+		<h1>Salad Sauce</h1>
+		<ul>
+			<li>Pricing</li>
+			<li>About</li>
+			<li>Contact</li>
+		</ul>
+	</nav>
+);
 
-var newh1 = document.createElement("h1");
-newh1.className = "header";
-newh1.textContent = "This is a imperative way to program";
-document.getElementById("root").append(newh1);
+ReactDOM.render(navbar, document.getElementById("root"));
